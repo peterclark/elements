@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Elements
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'hello_vue', 'data-turbolinks-track': 'reload'
+    = stylesheet_pack_tag 'hello_vue'
+  body
+    = yield
