@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
+    "axios": "^0.18.0",
     "element-ui": "^2.4.9",
     "pug": "^2.0.3",
     "stylus": "^0.54.5",

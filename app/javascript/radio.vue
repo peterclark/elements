@@ -4,9 +4,12 @@
       el-col(:sm='24')
         p
           el-radio-group(v-model="choice")
-            el-radio(:label="cold") Cold
-            el-radio(:label="warm") Warm
-            el-radio(:label="hot") Hot
+            el-radio(
+              v-for="choice in choices"
+              :key="choice"
+              :label="choice"
+              :value="choice"
+              name="temp") {{ choice }}
 
 </template>
 
@@ -14,6 +17,7 @@
 export default {
   data() {
     return {
+      choices: ['cold', 'warm', 'hot'],
       choice: 'hot'
     }
   }

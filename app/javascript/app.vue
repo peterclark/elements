@@ -5,6 +5,7 @@
     Icon
     Button
     Radio
+    Select
 </template>
 
 <script>
@@ -13,6 +14,7 @@
   import Icon from './icon.vue'
   import Button from './button.vue'
   import Radio from './radio.vue'
+  import Select from  './select.vue'
 
   export default {
     components: {
@@ -20,7 +22,8 @@
       Color,
       Icon,
       Button,
-      Radio
+      Radio,
+      Select
     }
   }
 </script>
